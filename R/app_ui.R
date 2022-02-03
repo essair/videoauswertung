@@ -11,7 +11,8 @@ app_ui <- function(request) {
     # Your application UI logic 
     fluidPage(
       h1("Datenauswertung"),
-      mod_app_images_ui("app_images_ui_1")
+      mod_app_images_ui("app_images_ui_1"),
+      mod_spectrograms_ui("spectrograms_ui_1")
 
     )
   )
