@@ -11,9 +11,9 @@ mod_spectrograms_ui <- function(id){
   ns <- NS(id)
   tagList(
     fluidRow(
-    h2("Spektrogramme"),
-    column(9, plotOutput(ns("plot1"))),
-    column(9, plotOutput(ns("plot2")))##need to make these smaller
+    column(12,
+           fluidRow(plotOutput(ns("plot1"))),
+           fluidRow(plotOutput(ns("plot2"))))##need to make these smaller
     )
                
   )
@@ -36,7 +36,7 @@ mod_spectrograms_server <- function(id){
         end_time = 19)
       
       plot(spec1, dark=FALSE)
-    })
+    }, height=300)
  
     output$plot2 <- renderPlot({
       
@@ -50,7 +50,7 @@ mod_spectrograms_server <- function(id){
       
       plot(spec2, dark=FALSE)
       
-    })
+    }, height=300)
     
   })
 }

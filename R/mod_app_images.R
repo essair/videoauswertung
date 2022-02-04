@@ -11,9 +11,9 @@ mod_app_images_ui <- function(id){
   ns <- NS(id)
   tagList(
     fluidRow(
-      column(3, EBImage::displayOutput(ns("img_left"), height = "400px")),
-      column(3, EBImage::displayOutput(ns("img_middle"), height = "400px")),
-      column(3, EBImage::displayOutput(ns("img_right"), height = "400px"))
+      column(4, EBImage::displayOutput(ns("img_left"), height = "400px")),
+      column(4, EBImage::displayOutput(ns("img_middle"), height = "400px")),
+      column(4, EBImage::displayOutput(ns("img_right"), height = "400px"))
     )
  
   )

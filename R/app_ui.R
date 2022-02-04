@@ -10,10 +10,14 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # Your application UI logic 
     fluidPage(
-      h1("Datenauswertung"),
-      mod_app_images_ui("app_images_ui_1"),
-      mod_spectrograms_ui("spectrograms_ui_1")
-
+        column(9,
+               h1("Datenauswertung"),
+               mod_app_images_ui("app_images_ui_1"),
+               mod_spectrograms_ui("spectrograms_ui_1")
+        ),
+        column(3,
+               mod_buttons_ui("buttons_ui_1")
+        )
     )
   )
 }

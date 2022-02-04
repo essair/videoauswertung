@@ -21,6 +21,7 @@ usethis::use_package( "thinkr" )
 ## Create a module infrastructure in R/
 golem::add_module( name = "camera_images" ) # Name of the module
 golem::add_module( name = "spectrograms" ) 
+golem::add_module( name = "buttons" ) 
 golem::add_module( name = "app_images") # Name of the module
 
 ## Add helper functions ----
